@@ -18,15 +18,15 @@ import tweepy
 1.2 - Make Google and Twitter authentication
 ```python
 # Google auth
-    credentials, project = google.auth.default()
-    client = storage.Client(credentials=credentials)
+credentials, project = google.auth.default()
+client = storage.Client(credentials=credentials)
 
-    # Twitter auth
-    auth = tweepy.OAuthHandler(v.access_key, v.access_secret)
-    auth.set_access_token(v.consumer_key, v.consumer_secret)
+# Twitter auth
+auth = tweepy.OAuthHandler(v.access_key, v.access_secret)
+auth.set_access_token(v.consumer_key, v.consumer_secret)
 
-    # Creating API object
-    api = tweepy.API(auth)
+# Creating API object
+api = tweepy.API(auth)
 ```
 1.3 - Extract tweets from desired account from JSON format and append to list
 ```python
