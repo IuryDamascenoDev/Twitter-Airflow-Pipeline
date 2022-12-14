@@ -1,4 +1,4 @@
-# Pipeline for Tweets ETL
+# Pipeline for ETL Tweets
 Takes tweets from specified account and saves them to csv file
 
 ## Pipeline Flowchart
