@@ -5,7 +5,8 @@ Takes tweets from specified account and saves them to csv file
 ![Pipeline Flowchart](pipeline_flowchart.png "Pipeline Flowchart")
 
 ## Steps
-1 - Create function to do the transformations and export  
+### Python ETL
+1 - Creating ETL function
 1.1 - Import Packages and Modules
 ```python
 import google.auth
@@ -57,8 +58,9 @@ bucket = client.get_bucket(v.bucket_name)
 bucket.blob('data/twitter_data.csv') \
         .upload_from_string(dataframe.to_csv(), 'text/csv')
 ```
-  
-2 - Write Airflow DAG
+
+### Airflow DAG creation 
+2 - Writing Airflow DAG
 2.1 - Import Packages and Modules
 ```python
 from datetime import timedelta
