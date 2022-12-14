@@ -6,7 +6,7 @@ Takes tweets from specified account and saves them to csv file
 
 ## Steps
 ### Python ETL
-1 - Creating ETL function
+1 - Creating ETL function  
 1.1 - Import Packages and Modules
 ```python
 import google.auth
@@ -60,7 +60,7 @@ bucket.blob('data/twitter_data.csv') \
 ```
 
 ### Airflow DAG creation 
-2 - Writing Airflow DAG
+2 - Writing Airflow DAG  
 2.1 - Import Packages and Modules
 ```python
 from datetime import timedelta
